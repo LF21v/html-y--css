@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    
+}
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+ESTILOS HEADER-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(37, 44, 240, 0.952);
+    color: yellow;
+}
+
+section h2{
+    margin-bottom: 20px;
+}
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-
+-+-+-+-+-+-+-+-+-+-ESTILOS AL NAV-+-+-+-+-+-+-+-+--+
+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links a:hover{
+    color: rgb(216, 105, 105);
+    
+}
+.nav-links .active{
+    color: yellow;
+}
+
+
+    
+
+/*-+-+-+-+-+ESTILOS A LAS SECIONES DEL MAIN-+-+-+-+-+-
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--+-
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+.hero{
+    background: url(../assets/images/background-1592030_1280\ \(1\).jpg) top/cover no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(242, 238, 238);
+    text-align: center;
+}
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+----------CLASE SECCION CONTENIDO--------------------
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++*/
+.contenido{
+    width: 60%;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-SECCION--+-+-+-+-+-+-+-+-+-+-+-+-
+--+-+-+-+-++--+FASCINANTE-+-+-+-+-+-++-+-+-+--+--
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+.top-facinantes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+}
+.top-facinante{
+    height: 350px;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    text-align: center;
+    background-color: white;
+}
+.top-facinante img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+
+
+
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-
+-+-+-+-+-+--+-seccion personas-+-+-+-+-+-+-+-+-+-++-
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+.top-personas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.top-persona {
+    height: 350px;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    text-align: center;
+    background-color: white;
+    
+    
+}
+
+.top-persona img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 5px;
+
+}
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+-+-++-+-+---+--+ESTILO-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+DE-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+--+-+-+-+-+-+-+-+FORMULARIO-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(244, 221, 189);
+    border: 1px solid rgb(231, 206, 107);
+}
+
+
+
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+--+-+-+-+-+-+--+-+-+FOOTER-+--+-+-+-+-+-+-+-+-+-++-
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+---*/
+footer{
+    background-color: rgb(28, 28, 65);
+    color: rgb(242, 238, 238);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+}
+.pie-pagina{
+    width: 100%;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 45px 0px;
+    
+}
+.pie-pagina .grupo-1 .box h2{
+    color: yellow;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: red;
+}
+    
+    
+
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+-+-+-+-+-+ESTILO DE GALERIA-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+*/
+.product-container-2{
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+}
+.product-container-2 img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+-+-+-+--+-+-+-+--ESTILO PAG. GALERIA-+-+-+-+-+-+-+-+-+-+-++
+-+--+--+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+.contenido-galeria {
+    background: url(../assets/images/pexels-tom-fournier-208942721-14349383.jpg) top/cover no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(242, 238, 238);
+    text-align: center;
+}
+
+
+
+/*-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+--+-+-+-+-+-+-+---+-+-+-+-+ESTILO DE PAGINA-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+---
+-+-+-+-+-+-+-+-+-+-+-+--+-+-DE PRESUPUESTO-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+.hero-presupuesto {
+    background: url(../assets/images/pexels-juan-pablo-lancia-286674488-24601888.jpg) top/cover no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(242, 238, 238);
+    text-align: center;
+}
+/*--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+--+-+-+ESTILO CONTACTO-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--*/
+.container-contacto {
+    background: url(../assets/images/pexels-alexandra-nezhybova-486657916-15951870.jpg) top/cover no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(242, 238, 238);
+    text-align: center;
+}
+
+.mapa{
+    text-align: center;
+    width: 100%;
+}
+.sobre-nosotros{
+    text-align: center;
+}
+  
+
+
+
+
